@@ -199,7 +199,7 @@ namespace ConnectedDots
                 y = DotsParent.GetY(y, speed, movementAngle);
 
                 // reset all variables once the dot is outside the controls client rectangle
-                if (x < -20 | y < -20 | x > MainRect.Width + 20 | y > MainRect.Height + 20)
+                if (x < -20 || y < -20 || x > MainRect.Width + 20 || y > MainRect.Height + 20)
                 {
                     ResetVars();
                 }
